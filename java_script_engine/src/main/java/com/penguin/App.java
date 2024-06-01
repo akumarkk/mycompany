@@ -23,4 +23,10 @@ public class App
         }
         System.out.println( "bye!" );
     }
+
+    public static void Hello() {
+        System.out.println( "Hello groovy from java!" );
+    
+    }
+
 }
