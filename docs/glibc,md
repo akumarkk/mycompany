@@ -16,3 +16,14 @@ GNU `sed' 3.02 or newer
 sudo apt install gcc-multilib
 
 ```
+
+
+#libc
+```
+X32 Kernel
+GRUB_CMDLINE_LINUX_DEFAULT="syscall.x32=y quiet"
+GRUB_CMDLINE_LINUX="syscall.x32=y"
+/etc/default/grub
+
+update-grub2
+```
