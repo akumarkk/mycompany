@@ -1,0 +1,44 @@
+# ssh
+
+```
+sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+
+ufw allow ssh
+sudo systemctl start ssh
+sudo systemctl stop ssh
+sudo systemctl restart ssh
+
+zip -r agent.zip
+zip -r agent_x64.zip linux-x64/publish/
+
+// not required
+sudo apt-get remove openssh-server
+
+
+//glibc
+https://tldp.org/HOWTO/Glibc2-HOWTO-5.html
+
+sudo apt install autoconf binutils texinfo
+wget https://ftp.gnu.org/gnu/libc/glibc-linuxthreads-2.3.tar.gz
+   38  ls
+   39  wget https://ftp.gnu.org/gnu/libc/glibc-crypt-2.1.tar.gz
+   40  wget https://ftp.gnu.org/gnu/libc/glibc-localedata-2.0.6.tar.gz
+   41  ls
+   42  cd glibc-2.19/
+   43  \
+   44  tar vxfz ../glibc-crypt-2.1.tar.gz
+   45  ls
+   46  tar vxfz ../glibc-linuxthreads-2.3.tar.gz
+   47  tar vxfz ../glibc-localedata-2.0.6.tar.gz
+   48  clear
+   49  ls
+   50  autoconf --version
+   51  sudo apt install autoconf binutils texinfo
+
+tar xzf glibc-2.0.6.tar.gz
+ cd glibc-2.0.6
+ tar xzf ../glibc-linuxthreads-2.0.6.tar.gz
+ tar xzf ../glibc-crypt-2.0.6.tar.gz
+ tar xzf ../glibc-localedata-2.0.6.tar.gzlocaledata-2.0.6.tar.gz
+```
