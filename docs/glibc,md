@@ -39,4 +39,11 @@ export LD_LIBRARY_PATH=/home/anikrisms/libs/gcc_4.6.0:/home/anikrisms/libs/gcc_4
 https://ftp.gnu.org/gnu/glibc/glibc-2.20.tar.gz
 https://ftp.gnu.org/gnu/make/
 
+
+#LD path
+DT RPATH 
+LD_LIBRARY_PATH
+DT RUNPATH
+/etc/ld.so.conf
+standard paths
 ```
