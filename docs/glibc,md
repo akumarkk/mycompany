@@ -26,4 +26,17 @@ GRUB_CMDLINE_LINUX="syscall.x32=y"
 /etc/default/grub
 
 update-grub2
+
+
+#gcc
+grep CONFIG_X86_X32 /boot/config*
+../configure --prefix=/home/anikrisms/glibc_2.19 --build=x86_64-linux-gnu --host=x86_64-linux-gnu CC="gcc -m64" CXX="g++ -m64" CFLAGS="-g -O2  -Wformat -Werror=format-security"
+
+export LD_LIBRARY_PATH=/home/anikrisms/libs/gcc_4.6.0:/home/anikrisms/libs/gcc_4.6.0/bin/:/home/anikrisms/libs/gcc_4.6.0/lib:/home/anikrisms/libs/gcc_4.6.0/lib64:/home/anikrisms/libs/gcc_4.6.0/libexec
+
+
+#make
+https://ftp.gnu.org/gnu/glibc/glibc-2.20.tar.gz
+https://ftp.gnu.org/gnu/make/
+
 ```
