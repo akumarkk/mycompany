@@ -1,0 +1,18 @@
+GNU `make' 3.79 or newer
+GCC 4.4 or newer, GCC 4.6 recommended
+GNU `binutils' 2.20 or later
+GNU `texinfo' 4.5 or later
+GNU `awk' 3.1.2, or higher
+Perl 5
+GNU `sed' 3.02 or newer
+
+```
+- Building GCC requires GMP 4.2+, MPFR 2.3.1+ and MPC 0.8.0+
+    - contrib/download_prerequisites
+- Texinfo version 4.7
+- --disable-multilib
+- export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+../configure prefix=/home/anikrisms/libs/gcc_4.6.0 --enable-languages=all --disable-multilib --enable-shared --enable-threads=posix --enable-__cxa_atexit 
+sudo apt install gcc-multilib
+
+```
