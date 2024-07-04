@@ -49,4 +49,18 @@ Disk identifier: 0x0005aebf
 /dev/sda1   *        2048    33554431    16776192   83  Linux
 /dev/sda2        33556478    41940991     4192257    5  Extended
 /dev/sda5        33556480    41940991     4192256   82  Linux swap / Solaris
+
+sudo fdisk /dev/sda
+
+Command (m for help): n
+Partition type:
+   p   primary (1 primary, 1 extended, 2 free)
+   l   logical (numbered from 5)
+Select (default p): l
+Adding logical partition 6
+No free sectors available
+
+Command (m for help): q
+
+
 ```
