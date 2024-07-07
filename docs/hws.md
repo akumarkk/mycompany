@@ -27,4 +27,18 @@ Connector: Various types, including 50-pin, 68-pin, and newer SAS connectors.
 Devices per Channel: Can support a large number of devices per channel (up to 16 with modern versions like SAS).
 Market: Primarily used in enterprise environments, including servers and high-performance workstations.
 Hot-swapping: Supports hot-swapping, allowing devices to be added or removed without shutting down the system.
- 
+
+NVMe (Non-Volatile Memory Express)
+Definition: NVMe is a high-performance, scalable host controller interface designed specifically for SSDs connected through the PCIe bus.
+Speed: NVMe significantly outperforms traditional interfaces like SCSI, offering much higher data transfer rates. It can reach speeds of several gigabytes per second, leveraging the high bandwidth of PCIe.
+Latency: NVMe reduces latency compared to SCSI, providing quicker access to data, which is crucial for demanding applications.
+Protocol: NVMe uses a streamlined command set optimized for flash-based storage, enhancing efficiency and performance.
+Applications: Commonly used in high-performance computing, data centers, and consumer devices requiring fast storage solutions.
+
+HDD/SSD:
+ - power connector
+ - data (ATA/SATA/SCSI/PCIe) connector
+
+Motherboard
+ - multiple SATA/SCSI/PCIe slots
+ - os harddrive in slot-0
