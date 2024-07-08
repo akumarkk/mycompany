@@ -42,3 +42,16 @@ HDD/SSD:
 Motherboard
  - multiple SATA/SCSI/PCIe slots
  - os harddrive in slot-0
+
+
+ Power connectors:
+ - mother board
+ - PCIe cable
+ 	- storage(NVMe), Network, Graphics cards 
+ - 8/4 pin EPS connection
+ - hdd connectors
+ 	- Molex connectors(hdd)
+ 	- SATA pw connector
+ - CD/DVD connectors
+ 	- Molex connectors
+ 	- IDE connector(data) 
