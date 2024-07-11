@@ -64,7 +64,7 @@ HDD/SSD:
 
 
 ## Power connectors:
- - mother board
+ - mother board (ATX connectors)
  - PCIe cable
  	- storage(NVMe), Network, Graphics cards 
  - 8/4 pin EPS connection
