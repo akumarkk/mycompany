@@ -6,5 +6,7 @@ minikube start --profile walmart --nodes=3 --memory=4096 --cpus=2 --driver=docke
 minikube profile list
 
 minikube profile my-custom-cluster
+kubectl config use-context my-custom-cluster
+
 
 ```
