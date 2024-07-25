@@ -35,4 +35,9 @@ cmdlets
 	write-host "print text" #echo;
 	clear-host #clear;
 	copy-item .\file -destination <path>
-	
+	copy-item .\dir\* -destination <path> -recurse #copy cont of subfolder
+	move-item -path .\dir\file -destination .\dir1\filerename #mv
+	rename-item -path .\dir\file -newname filerename
+	remove-item -path .\folder\* #rm
+
+	get-history #history 
