@@ -11,8 +11,28 @@ verb-noun
 Update-Help -Module CimCmdlets -Force
 Get-Help Get-CimInstance -Online
 
+get-Help Get-CimInstance -ShowWindow
+
+get-help "about*" // help on topic 
+
+
 Import-Module CimCmdlets
 
 Get-Command -Module CimCmdlets
 
 ```
+
+comments 
+  # or <# #>
+
+cmdlets
+	get-location
+	set-location ..
+	get-date
+
+	get-childitem -recurse/-path <path> #ls; list
+	write-output "print text" #echo;
+	write-host "print text" #echo;
+	clear-host #clear;
+	copy-item .\file -destination <path>
+	
