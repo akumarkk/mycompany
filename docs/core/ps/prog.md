@@ -1,5 +1,6 @@
 ## prog
 - similar to f#, everything is obj - oops
+- get-member - introspection of an obj
 link - https://learn.microsoft.com/en-us/dotnet/api/?view=powershellsdk-7.4.0
 
 datatype
@@ -117,6 +118,8 @@ try{
 } finally {
 	# execute irrespective of ex occur or no
 }
+
+trow "file not found at loc"
 
 try {Get-Content -path "test.log" -ErrorAction Stop}
 catch [System.IO.FileNotFoundException] 
