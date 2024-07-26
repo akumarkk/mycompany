@@ -141,3 +141,5 @@ Use Functions for custom tasks, quick automation scripts, and when flexibility i
 $ErrorActionPreference = 'stop'
 Get-Content -path "test.log" -ErrorAction SilentlyContinue -ErrorVariable "error_var"
 
+Import-Module /com/com/coreApps/PS/GreetingCmdlet/bin/Debug/net8.0/GreetingCmdlet.dll
+
