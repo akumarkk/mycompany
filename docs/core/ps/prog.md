@@ -66,6 +66,7 @@ switch(<test-value>) {
 collections
 $a = @(10, 23)
 $a = @("hi", "hello")
+Write-Host "$($a[0])"
 
 	- array - fixed size
 	- arraylist - list
@@ -89,3 +90,16 @@ Iterations
 	Foreach
 	foreach($k in $a) {}
 	foreach($i in $a) {Write-Output $i}
+
+
+
+Function
+
+	function Verb-Noun(ar1, ar2){
+		# $args(default) array of args
+	}
+
+
+	function Get-Args($args1, $args_opt) {Write-Host $args1; Write-Host "hello $args_opt";}
+	Get-Args $a "wc" 
+	Write-Host "$($a[0])"
