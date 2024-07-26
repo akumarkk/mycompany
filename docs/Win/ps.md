@@ -40,4 +40,19 @@ cmdlets
 	rename-item -path .\dir\file -newname filerename
 	remove-item -path .\folder\* #rm
 
-	get-history #history 
+	get-history #history
+
+
+## programming
+
+variable 
+	$var = assign
+	$global:var_name = assign #global var scope in ps/session.
+
+	get-variable
+	set-variable -name "var_name" -value assign -option constant/readonly 
+	new-variable -name "var_name" -value assign
+	remove-variable -name "var"
+
+	clear-variable -name "var"
+	${var with space} = assign #var
