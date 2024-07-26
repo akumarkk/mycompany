@@ -103,3 +103,20 @@ Function
 	function Get-Args($args1, $args_opt) {Write-Host $args1; Write-Host "hello $args_opt";}
 	Get-Args $a "wc" 
 	Write-Host "$($a[0])"
+
+
+	function Get-Args() {param ([string]$Name, [int]$age=200) Write-Host $age; Write-Host "hello $Name";}
+	Get-Args -Name "arjun" -age 100
+
+
+Cmdlets
+Cmdlets are specialized .NET classes written in C# that are designed to perform a specific function in PowerShell. They are the building blocks of PowerShell scripts and provide the core functionality.
+
+	Performance: Cmdlets are typically more efficient and faster than functions because they are compiled .NET classes.
+	Standardization: Cmdlets follow a standardized naming convention, usually in the form of Verb-Noun (e.g., Get-Process, Set-Item).
+
+	Designed for seamless pipeline integration.
+
+Use Cmdlets when you need high performance, standard tasks, and advanced parameter handling. They are ideal for repetitive and standardized operations.
+
+Use Functions for custom tasks, quick automation scripts, and when flexibility is required. Functions are easier to write and modify, making them suitable for user-specific logic.
