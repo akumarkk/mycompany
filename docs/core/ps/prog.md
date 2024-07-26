@@ -120,3 +120,6 @@ Cmdlets are specialized .NET classes written in C# that are designed to perform 
 Use Cmdlets when you need high performance, standard tasks, and advanced parameter handling. They are ideal for repetitive and standardized operations.
 
 Use Functions for custom tasks, quick automation scripts, and when flexibility is required. Functions are easier to write and modify, making them suitable for user-specific logic.
+
+$ErrorActionPreference = 'stop'
+Get-Content -path "test.log" -ErrorAction SilentlyContinue -ErrorVariable "error_var"
