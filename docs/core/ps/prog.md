@@ -1,5 +1,5 @@
 ## prog
-
+- similar to f#, everything is obj - oops
 link - https://learn.microsoft.com/en-us/dotnet/api/?view=powershellsdk-7.4.0
 
 datatype
@@ -62,3 +62,30 @@ switch(<test-value>) {
 	default {<action>}
 }
 
+
+collections
+$a = @(10, 23)
+$a = @("hi", "hello")
+
+	- array - fixed size
+	- arraylist - list
+		$l = new-object system.collections.arraylist
+		not homogeneous
+	- hash table - 
+		$kvp = @{ k1="v1"; k2="v2"; }
+		$kvp.Add(k1, v1);
+
+Iterations
+
+	while ($i -lt 10) {}
+	while($i -gt 0) {write-output $i; $i--;}
+
+	For loop
+	for(init; cond; inc) {}
+
+	for($i=0; $i -lt $a.Count; $i++) {write-output $a[$i]}
+
+
+	Foreach
+	foreach($k in $a) {}
+	foreach($i in $a) {Write-Output $i}
