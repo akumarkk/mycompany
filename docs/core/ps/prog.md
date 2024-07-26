@@ -108,6 +108,20 @@ Function
 	function Get-Args() {param ([string]$Name, [int]$age=200) Write-Host $age; Write-Host "hello $Name";}
 	Get-Args -Name "arjun" -age 100
 
+try-catch
+
+try{
+	Get-Content -path "test.log" -ErrorAction stop
+}catch {
+
+} finally {
+	# execute irrespective of ex occur or no
+}
+
+try {Get-Content -path "test.log" -ErrorAction Stop}
+catch [System.IO.FileNotFoundException] 
+catch{ Write-Output "file not found"} 
+finally {Write-Output "res free"}
 
 Cmdlets
 Cmdlets are specialized .NET classes written in C# that are designed to perform a specific function in PowerShell. They are the building blocks of PowerShell scripts and provide the core functionality.
@@ -123,3 +137,4 @@ Use Functions for custom tasks, quick automation scripts, and when flexibility i
 
 $ErrorActionPreference = 'stop'
 Get-Content -path "test.log" -ErrorAction SilentlyContinue -ErrorVariable "error_var"
+
