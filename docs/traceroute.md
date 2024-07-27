@@ -1,7 +1,7 @@
 ## traceroute
 
 tracert <destination>
-traceroute -I <destination>
+traceroute -I <destination> -p <port> -q <hop> -4/6 -g <gateway>
 
 While traceroute typically uses UDP or ICMP on Unix-like systems, it can also be explicitly configured to use ICMP.
 
