@@ -3,6 +3,21 @@
 tracert <destination>
 traceroute -I <destination> -p <port> -q <hop> -4/6 -g <gateway>
 
+sysctl -a | grep icmp
+/etc/sysctl.conf
+	net.ipv4.icmp_ratelimit = 1000
+	net.ipv4.icmp_ratemask = 88089
+
+config icmp
+	echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
+	net.ipv4.icmp_echo_ignore_all = 1 #/etc/sysctl.conf
+	sudo sysctl -p #app changes
+
+	sudo iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT
+	sudo iptables -A INPUT -p icmp --icmp-type 8 -j DROP
+	sudo sh -c 'iptables-save > /etc/iptables/rules.v4' #persist across reboots	 
+
+
 While traceroute typically uses UDP or ICMP on Unix-like systems, it can also be explicitly configured to use ICMP.
 
 Initial Packet:
