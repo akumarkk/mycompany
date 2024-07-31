@@ -14,6 +14,7 @@
 
 - segments - data >1500b
 - segments are stored in tcp_sock.
+- data seg, ack seg, data+ack seg
 
 key files and directories related to TCP queues and their usage:
 	- /proc/net/tcp
