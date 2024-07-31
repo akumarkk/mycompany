@@ -1,0 +1,11 @@
+## tools
+- netstat
+- ss -tuln/ss -antup
+- lsof -i/lsof -i tcp/lsof -i udp
+- tcpdump tcp or udp/tcpdump port 80
+- nmap -sT <target>/nmap -p 80,443 <target>
+- iperf -s/iperf -c <server_ip>
+- nc <host> <port>/nc -l <port>
+- traceroute <host>
+- iptables -L -v -n/nft list ruleset
+- ifconfig -a/ip addr show
