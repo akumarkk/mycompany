@@ -15,6 +15,16 @@
 - segments - data >1500b
 - segments are stored in tcp_sock.
 - data seg, ack seg, data+ack seg
+- arq
+- retrsmission timer - resend if an ACK is not received within this time
+	RTO = SRTT + max(G, 4*RTTVAR)
+	Smoothed Round-Trip Time (SRTT): An estimate of the average RTT.
+	RTT Variation (RTTVAR): The estimated variance in RTT.
+
+	tcp_retransmit_timer
+- congestion
+- reliable
+ - udp/l3 send & forget
 
 key files and directories related to TCP queues and their usage:
 	- /proc/net/tcp
