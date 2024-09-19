@@ -71,4 +71,14 @@ Metrics
 - connection pooling
 - Max active sessions
 - Hit ratios - # of sql ops that are handled by cached data instead of expensive IO operations.
-- Thread counts - an app health can be measured by the no. of threads that are running and currently active. 
+- Thread counts - an app health can be measured by the no. of threads that are running and currently active.
+
+
+ ##### response time
+ - isn't measured per each req for ex: path of each end point, instead app's are verified/validated against the acceptance criteria:
+ 	- verify response time is not >4sec when 1000 users access the website simultaneously.
+	- verify response time of the app under load is within the acceptable range when the network connectivity is slow.
+	- check the mx users that the app can handler before it crashes.
+	- check data ba. Execution time when 500 records are read/written simultaneously.
+	- check cpu and memory usage of the app and db server under peak load conditions.
+	- verify response time of the app under low, moderate, normal and heavy load conditions.  
