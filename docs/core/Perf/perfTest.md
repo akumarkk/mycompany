@@ -20,4 +20,18 @@ Perf testing :
 - endurance testing
 	- exp. load over long per. of time.
 - spike testing
+	- s/w reaction to large spike in load
 - volume testing
+ 	- - large vol. of data is generated in db, app perf under varying db volumes.
+
+perf problems:
+  - long load times
+  - poor response times
+  - poor scalability
+  - bottlenecking
+  - perf bottlenecks
+  	- cpu utilization
+  	- mem utilization
+  	- n/w utilization
+  	- os initiation
+  	- disk usage
