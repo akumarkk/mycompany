@@ -19,6 +19,10 @@ J Meter
 		- table result - summary of test results in table format.
 		- log result - summary of test results in the text file. 
 	- configuration elements
+	    default variables(Urls) and the data used by the samplers.
+		- http cookie manager
+		- ftp request default
+		- csv dataset config
 	- assertions
 	- timers
 	- processor
