@@ -9,8 +9,11 @@ sequence of steps browser goes through to convert html, css, Js into pixels on t
 - selector for each DOM property and calc styles for them
 - Render tree - what elements should be rendered on the screen and what styles should be applied to them.
 -  Layout - calc position and dimension of each ele.
-- Paint - each units are converted into absolute units - pixels and drawn in the screen one by one called paint.
-- Update layer tree
+- Update layer tree/Layerize
+    - layers are needed for the page, how many layers the page needs.
+- Paint/Roasterize(green rectangle) - each units are converted into absolute units - pixels and drawn in the screen one by one called paint.
+    - location, dimension, layer root
+
 - Composite - app can have multiple layers and browser can handle these layers separately - the proc of handling these layers - compositing layers.
 - Frame - frame on the screen
 - JS - 
@@ -45,6 +48,9 @@ Render tree
 
 
  ###### Render Blocking Resources
+
+ Layout - process of calc geometry of the ele. main thread calc width, height and x,y positions. relative measurements to pixels.
+ it begins at the root of the tree and proc one ele at a time.
 
 
 
