@@ -1,5 +1,8 @@
 ###### run levels
 
+```
+init <run-level>
+```
 run level 0 shut down the system
 1 single user mode;
 2 multiuser mode without networking
