@@ -27,4 +27,17 @@ systemctl enable servicename.service // boottime enable
 systemctl restart | reload servicename.service
 systemctl list-units -all
 
+//services config file /run/systemd/system
+
 ```
+
+###### sysVinit vs init vs systemd
+init - predessesor of systemd
+    - initialization
+    - fs init
+    - proc init
+    - run levels
+
+ubuntu 14.0 init based
+ubuntu 15.0 systemd based
+
