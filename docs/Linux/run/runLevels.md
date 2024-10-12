@@ -15,3 +15,16 @@ run level 0 shut down the system
 3 multiuser mode with networking
 5 multiuser mode with networking and GUI
 6 reboot the system
+
+###### system control
+- systemctl - command to control system services
+- replaces the service command
+
+
+```
+systemctl start|stop|status servicename.service
+systemctl enable servicename.service // boottime enable
+systemctl restart | reload servicename.service
+systemctl list-units -all
+
+```
