@@ -30,3 +30,24 @@ consumer - an app trying to access the prpvider app from the untrusted n.w.
 
 ###### Api
 - to consume data or capabilities of Apis
+
+
+###### Traffic
+east-west traffic - the communication between services within a cluster or data center. - this means the interactions between different microservices.
+
+Api proxy - Primarily handles external traffic (north-south traffic)
+- Exposing internal services to external clients.
+- Securing API endpoints.
+- Rate limiting and throttling API traffic.
+- When you require advanced API management features like transformation, caching, and rate limiting.
+
+
+
+SM - Manages internal traffic between microservices (east-west traffic)
+- Traffic Management: Advanced routing, load balancing, and fault injection.
+- Security: Enforces mutual TLS, authorization policies, and zero-trust security
+- Observability: Provides detailed metrics, logs, and traces for troubleshooting and performance optimization.
+- Resiliency: Implements circuit breakers, retries, and timeouts to improve service reliability.
+
+- Controlling traffic flow within a microservices architecture.
+- Monitoring and troubleshooting microservices.
