@@ -1,7 +1,7 @@
 ###### Api proxy
 - acts as a gateway and single point for all incoming requests
 - HA service that enables secure publishing of REST Apis to the unstrusted public n/w and enforces policies to protect them.
-
+- Apigee, Kong, Mulesoft Anypoint Platform, Amazon API Gateway, Azure API Management
 
 Proxy
 - auth, author, RL and enc
