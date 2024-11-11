@@ -1,4 +1,5 @@
 ###### STRIDE
+STRIDE is a model of threats, used to help reason and find threats to a system.
 
 Spoofing |  Authenticity | Pretending to be something or someone other than yourself
 Tampering | Integrity | Modifying something on disk, network, memory, or elsewhere
