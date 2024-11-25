@@ -1,0 +1,4 @@
+###### inheritence
+"In object-oriented systems with multiple inheritance, some mechanism must be used for resolving conflicts when inheriting different definitions of the same property from multiple superclasses."[1] C3 superclass linearization is an algorithm used primarily to obtain the order in which methods should be inherited in the presence of multiple inheritance. In other words, the output of C3 superclass linearization is a deterministic Method Resolution Order (MRO).
+
+The "diamond problem" (sometimes referred to as the "Deadly Diamond of Death"[6]) is an ambiguity that arises when two classes B and C inherit from A, and class D inherits from both B and C. If there is a method in A that B and C have overridden, and D does not override it, then which version of the method does D inherit: that of B, or that of C?
