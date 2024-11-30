@@ -10,4 +10,4 @@ Tools: SQL, data warehousing tools (like Informatica, Talend), business intellig
 | Data Structure	| Normalized	|Denormalized (star or snowflake schema)|
 | Data Access	|Real-time	|Historical|
 | Analysis Type	| Simple queries, reports |	Complex queries, data mining, predictive modeling|
-| Goal	| Support day-to-day operations | 	Support strategic decision-making
+| Goal	| Support day-to-day operations | 	Support strategic decision-making|
