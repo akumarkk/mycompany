@@ -5,8 +5,7 @@ Robotics
 Using computer vision and pattern recognition to identify, analyze, and interact with visual patterns 
 Autonomous vehicles
 Using computer vision and pattern recognition to derive information from images and videos 
-Medical imaging
-Using computer vision and pattern recognition to improve healthcare 
+
 Security systems
 Using computer vision and pattern recognition to identify suspicious activities, authenticate people, and analyze surveillance video 
 Image recognition
