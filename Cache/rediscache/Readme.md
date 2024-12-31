@@ -21,3 +21,5 @@ Docker Images
 docker pull redislabs/redisgears:latest
 docker run -p 6379:6379 redislabs/redisgears:latest
 ```
+
+Ref : https://github.com/RedisGears/RedisGears/tree/master
