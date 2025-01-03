@@ -15,8 +15,8 @@
 
 ###### User moves to a New Region
 1. Identify the Issue:
-
 The core problem is that the user's information is still associated with their previous region ("Region A") even though they have moved to a different country (and potentially a new region within that country).
+
 2. Solutions:
 
 User Profile Migration:
